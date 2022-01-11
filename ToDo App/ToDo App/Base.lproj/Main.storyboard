@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19528" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -30,7 +31,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NotesTableViewCell" rowHeight="205" id="2js-17-kyX" customClass="NotesTableViewCell" customModule="ToDo_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="374" height="205"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="374" height="205"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2js-17-kyX" id="Ifv-Hn-32e">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="205"/>
@@ -173,7 +174,7 @@
                                 <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R90-zw-FEr">
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R90-zw-FEr">
                                 <rect key="frame" x="4" y="130" width="406" height="64"/>
                                 <subviews>
                                     <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="yAX-O6-hdc">
@@ -183,7 +184,7 @@
                                             <action selector="datePickerNotif:" destination="e2s-tI-yRk" eventType="valueChanged" id="SYW-6u-AME"/>
                                         </connections>
                                     </datePicker>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VJF-jI-cHF">
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VJF-jI-cHF">
                                         <rect key="frame" x="341" y="17" width="51" height="31"/>
                                         <accessibility key="accessibilityConfiguration" identifier="notificationSwitch"/>
                                         <connections>
@@ -212,6 +213,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="R90-zw-FEr" firstAttribute="top" secondItem="r6b-8k-Xgd" secondAttribute="bottom" constant="16" id="6S7-pf-Fxy"/>
+                            <constraint firstItem="lZn-nv-Sw3" firstAttribute="top" secondItem="R90-zw-FEr" secondAttribute="bottom" constant="16" id="AjP-xW-luz"/>
                             <constraint firstItem="62M-AW-8Ld" firstAttribute="leading" secondItem="aNt-kv-YeL" secondAttribute="leading" constant="24" id="IoG-LX-KQl"/>
                             <constraint firstItem="aNt-kv-YeL" firstAttribute="trailing" secondItem="f4L-eL-0Nr" secondAttribute="trailing" constant="16" id="JDH-Vg-gl7"/>
                             <constraint firstItem="f4L-eL-0Nr" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="r6b-8k-Xgd" secondAttribute="trailing" constant="8" symbolic="YES" id="Reo-YM-tIl"/>
